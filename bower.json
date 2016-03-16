@@ -1,0 +1,27 @@
+{
+  "name": "angular-nadobit-api",
+  "description": "AngularJS REST-Api Layer",
+  "main": "dist/angular-nadobit-api.min.js",
+  "authors": [
+    "Bastian Probian <contmp@me.com>",
+    "Michael Drescher <kaesemeister@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "rest",
+    "nadobit"
+  ],
+  "homepage": "https://github.com/nadobit/angular-nadobit-api",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "dependencies": {
+    "angular-nadobit-config": "^1.0.0",
+    "angular-cookies": "^1.5.1"
+  }
+}
