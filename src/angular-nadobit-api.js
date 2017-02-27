@@ -116,6 +116,23 @@ angular.module('nadobit.api', [
         });
     };
 
+    this.options = function(path, params)
+    {
+        return self.resolve(path).then(function(res) {
+            return $http({
+                url: res.url,
+                headers: res.headers,
+                method: 'OPTIONS',
+                params: params,
+            });
+        }).catch(function(res) {
+            if (res.status === 403) {
+                $rootScope.$emit('nbApi.forbidden');
+            }
+            return $q.reject(res);
+        });
+    };
+
 })
 
 ;
